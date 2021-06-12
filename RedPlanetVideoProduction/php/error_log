@@ -1,0 +1,4 @@
+[17-Feb-2020 09:41:37 UTC] PHP Notice:  Undefined index: name in /home/fj3oa5j7/public_html/php/mail.php on line 2
+[17-Feb-2020 09:41:37 UTC] PHP Notice:  Undefined index: email in /home/fj3oa5j7/public_html/php/mail.php on line 3
+[17-Feb-2020 09:41:37 UTC] PHP Notice:  Undefined index: message in /home/fj3oa5j7/public_html/php/mail.php on line 4
+[17-Feb-2020 09:41:37 UTC] PHP Notice:  Undefined index: subject in /home/fj3oa5j7/public_html/php/mail.php on line 5

@@ -1,0 +1,229 @@
+header {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: grey;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('img/mobileHome.png') black no-repeat center center scroll;
+	height: 100vh !important;
+  }
+  header video {
+    display: none;
+  }
+  header h1{font-size: 4.0rem !important}
+  header p{font-size: 1.10rem !important;}
+  
+  
+  .navbar-brand img{width:28vh !important}
+  
+  
+  .titlePage{font-size: 3.0rem !important;}
+
+  
+}
+
+nav {z-index: 3; position: fixed !important; width:100%; }
+
+
+.navbar-brand img{width:50vh}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    background-color: rgb(247, 247, 249) !important;
+}
+
+.dropdown-item:focus, .dropdown-item:hover { background-color: white !important;}
+
+.icons a{color: white}
+
+ /* Chi siamo */
+ #chiSiamo{background-color: rgb(247, 247, 249)}
+ 
+.carousel-control-prev-icon {
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.shadowCarousel  /*add blur to carousel border img*/
+    {
+        display:block;
+        position:relative;
+		
+    }
+	
+.shadowCarousel:before
+    {
+        display:block;
+        content:'';
+        position:absolute;
+        width:100%;
+        height:100%;
+        -moz-box-shadow:inset 0px 0px 5px 5px rgb(247, 247, 249);
+        -webkit-box-shadow:inset 0px 0px 5px 5px rgb(247, 247, 249);
+        box-shadow:inset 0px 0px 5px 5px rgb(247, 247, 249)
+		
+    }
+
+
+ /* parallax */
+.parallax {
+
+  background-image: url("img/b.jpg");
+
+
+  min-height: 60%; 
+
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ /* cosa facciamo */
+
+
+#cosaFacciamo .imgContainer{/*width: 100%;*/ height: auto; overflow:hidden; border-radius: 50%; border:0px;  /*width: 70%;  margin-left:15%*/   width: 50%; margin-left: 25.5%}
+#cosaFacciamo img {border-radius: 50%;}
+#cosaFacciamo .titoliServizi{font-size:1.3rem /*margin-bottom: 0.2rem*/}
+
+
+#cosaFacciamo a {color: black; 
+	-webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+	}
+#cosaFacciamo a:hover {color: red;}
+#cosaFacciamo a:hover img{-webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* IE 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease; 
+	transform: scale(1.5);
+	opacity:0.8}
+
+#cosaFacciamo img:hover{-webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* IE 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease; 
+	transform: scale(1.5);
+	opacity:0.8
+	}
+	
+	
+/*NOSTRI VIDEO*/
+
+.rvs-container a.rvs-nav-item.rvs-active{border-color: red !important; background-color: red !important;}
+a.rvs-play-video:hover{background-color: red !important;}
+.rvs-container a.rvs-close:hover{background-color: red !important;}
+
+.carousel-control-next, .carousel-control-prev {width: 6% !important;}
+
+/*clienti*/
+#recipeCarousel img {max-width:70% !important; margin-left:15%}
+
+/*Contatti*/
+#col-phone-email a{color: black !important;}
+
+
+/*Single page*/
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+/*footer*/
+.specularText{-moz-transform: scale(-1, 1);
+-webkit-transform: scale(-1, 1);
+-o-transform: scale(-1, 1);
+-ms-transform: scale(-1, 1);
+transform: scale(-1, 1);}
+
+
+/*Preloader*/
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background-color: rgb(247, 247, 249);
+	
+
+}
+
+.se-pre-con #planetPreloader{
+	width:15%;
+ 	position: absolute;
+    top: 0;
+    bottom: 0;
+	left: 0;
+	right: 0;
+	margin:auto; 
+
+
+  -webkit-animation-name: rotate;
+  -webkit-animation-duration:2s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-timing-function:linear;
+  -moz-animation-name: rotate;
+  -moz-animation-duration:2s;
+  -moz-animation-iteration-count:infinite;
+  -moz-animation-timing-function:linear;
+}
+
+@-webkit-keyframes rotate {
+  from {-webkit-transform:rotate(0deg);}
+  to {  -webkit-transform:rotate(360deg);}
+}
+
+@-moz-keyframes rotate {
+  from {-moz-transform:rotate(0deg);}
+  to {  -moz-transform:rotate(360deg);}
+}
+
+
+
